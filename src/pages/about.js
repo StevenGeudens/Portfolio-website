@@ -10,6 +10,7 @@ import Experience from "@/components/experience";
 import Education from "@/components/education";
 import TransitionEffect from "@/components/transitionEffect";
 import {supabase} from "@/lib/supabaseClient";
+import {GetAllEducations, GetAllExperiences} from "@/pages/api/supabase";
 
 const AnimatedNumbers = ({value}) => {
     const ref = useRef(null);
@@ -34,10 +35,8 @@ const AnimatedNumbers = ({value}) => {
 }
 
 export async function getServerSideProps() {
-    const supabaseClient = supabase;
-    let {data: experiences} = await supabaseClient.from('Experience').select().order('endDate', {ascending: true});
-    let {data: educations} = await supabase.from('Education').select().order('achievementDate', {ascending: true});
-
+    let experiences = await GetAllExperiences();
+    let educations = await GetAllEducations();
     return {
         props: {
             experiences: experiences,

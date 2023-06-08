@@ -7,15 +7,14 @@ import Carousel from "@/components/carousel";
 import {GithubIcon} from "@/components/icons";
 import Link from "next/link";
 import Image from "next/image";
+import {GetProjectById} from "@/pages/api/supabase";
 
 export async function getServerSideProps(context) {
-    let {data} = await supabase.from('Project').select(`*, Image(*)`)
-        .order('order', {foreignTable: 'Image', ascending: true})
-        .eq('id', context.query.id).single();
+    let project = await GetProjectById(context.query.id);
 
     return {
         props: {
-            project: data
+            project: project
         },
     }
 }

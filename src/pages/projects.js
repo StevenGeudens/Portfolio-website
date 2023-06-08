@@ -8,6 +8,7 @@ import {motion} from "framer-motion";
 import TransitionEffect from "@/components/transitionEffect";
 import Placeholder from "../../public/images/placeholder.jpg";
 import {supabase} from "@/lib/supabaseClient";
+import {GetAllProjects} from "@/pages/api/supabase";
 
 const FramerImage = motion(Image)
 
@@ -64,11 +65,11 @@ const Project = ({id, title, type, Image, link, github}) => {
 }
 
 export async function getServerSideProps() {
-    let {data} = await supabase.from('Project').select(`*, Image(*)`).order('isFeatured', {ascending: false});
+    let projects = await GetAllProjects();
 
     return {
         props: {
-            projects: data
+            projects: projects
         },
     }
 }
