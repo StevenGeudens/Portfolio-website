@@ -75,15 +75,15 @@ const NavBar = ({mode, setMode}) => {
                     <CustomLink href='/contact' title="Contact" className="ml-4"/>
                 </nav>
                 <nav className="flex items-center justify-center flex-wrap">
-                    <motion.a href="https://twitter.com" target={"_blank"}
+                    <motion.a href="https://twitter.com/GeudensSteven" target={"_blank"}
                               whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mr-3">
                         <TwitterIcon/>
                     </motion.a>
-                    <motion.a href="https://github.com" target={"_blank"}
+                    <motion.a href="https://github.com/StevenGeudens" target={"_blank"}
                               whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mx-3">
                         <GithubIcon/>
                     </motion.a>
-                    <motion.a href="https://linkedin.com" target={"_blank"}
+                    <motion.a href="https://www.linkedin.com/in/steven-geudens/" target={"_blank"}
                               whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mx-3">
                         <LinkedInIcon/>
                     </motion.a>
@@ -110,16 +110,16 @@ const NavBar = ({mode, setMode}) => {
                             <CustomMobileLink href='/contact' title="Contact" toggle={handleClick}/>
                         </nav>
                         <nav className="flex items-center justify-center flex-wrap mt-2">
-                            <motion.a href="https://twitter.com" target={"_blank"}
+                            <motion.a href="https://twitter.com/GeudensSteven" target={"_blank"}
                                       whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mr-3 sm:mr-1">
                                 <TwitterIcon/>
                             </motion.a>
-                            <motion.a href="https://github.com" target={"_blank"}
+                            <motion.a href="https://github.com/StevenGeudens" target={"_blank"}
                                       whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mx-3 bg-light rounded-full
                                       dark:bg-dark sm:mx-1">
                                 <GithubIcon/>
                             </motion.a>
-                            <motion.a href="https://linkedin.com" target={"_blank"}
+                            <motion.a href="https://www.linkedin.com/in/steven-geudens/" target={"_blank"}
                                       whileHover={{y:-2}} whileTap={{scale:0.9}} className="w-6 mx-3 sm:mx-1">
                                 <LinkedInIcon/>
                             </motion.a>
