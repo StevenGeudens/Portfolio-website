@@ -9,8 +9,10 @@ import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Education from "@/components/education";
 import TransitionEffect from "@/components/transitionEffect";
-import {supabase} from "@/lib/supabaseClient";
+import {supabase} from "@/API/utils/supabaseClient";
 import {GetAllEducations, GetAllExperiences} from "@/pages/api/supabase";
+import {useGetExperiences} from "@/API/experienceAPI";
+import {useGetEducations} from "@/API/educationAPI";
 
 const AnimatedNumbers = ({value}) => {
     const ref = useRef(null);
@@ -34,18 +36,10 @@ const AnimatedNumbers = ({value}) => {
     return <span ref={ref}></span>
 }
 
-export async function getServerSideProps() {
-    let experiences = await GetAllExperiences();
-    let educations = await GetAllEducations();
-    return {
-        props: {
-            experiences: experiences,
-            educations: educations
-        },
-    }
-}
+const About = () => {
+    const {data: experiences} = useGetExperiences();
+    const {data: educations} = useGetEducations();
 
-const About = ({experiences, educations}) => {
     return (
         <>
             <Head>

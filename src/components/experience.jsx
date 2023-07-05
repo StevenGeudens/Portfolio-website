@@ -2,7 +2,7 @@ import {useScroll, motion} from "framer-motion";
 import {useRef, useEffect, useState} from "react";
 import LiIcon from "@/components/liIcon";
 import Link from "next/link";
-import {supabase} from "./../lib/supabaseClient";
+import {supabase} from "../API/utils/supabaseClient";
 
 const Details = ({position, company, companyLink, startDate, endDate, address, work}) => {
     const ref = useRef(null);

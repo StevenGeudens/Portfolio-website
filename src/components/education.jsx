@@ -1,7 +1,7 @@
 import {useScroll, motion} from "framer-motion";
 import {useEffect, useRef, useState} from "react";
 import LiIcon from "@/components/liIcon";
-import {supabase} from "@/lib/supabaseClient";
+import {supabase} from "@/API/utils/supabaseClient";
 
 const Details = ({type, achievementDate, place, info}) => {
     const ref = useRef(null);
