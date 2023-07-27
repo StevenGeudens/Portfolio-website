@@ -2,7 +2,7 @@ import Head from "next/head";
 import AnimatedText from "@/components/animatedText";
 import Layout from "@/components/layout";
 import Image from "next/image";
-import ProfilePic from "../../public/images/profile/About_portrait.png";
+import ProfilePic from "../../public/images/profile/portrait_sg.png";
 import {useEffect, useRef} from "react";
 import {useInView, useMotionValue, useSpring} from "framer-motion";
 import Skills from "@/components/skills";
@@ -57,7 +57,7 @@ const About = () => {
                             className="col-start-2 col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
                             <p className="font-medium">
-                                Hi, I&apos;m  Steven Geudens, a full-stack developer with a passion for
+                                Hi, I&apos;m  Steven Geudens, a junior developer with a passion for
                                 creating beautiful, functional, and user-centered digital experiences and applications.
                             </p>
                             <p className="mt-4 font-medium">

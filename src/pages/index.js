@@ -15,7 +15,7 @@ export default function Home({mode}) {
             <Head>
                 <title>Home | Steven Geudens</title>
                 <meta name="description"
-                      content="Steven Geudens is a versatile web developer, network engineer, and programmer with a passion for building high-performance, user-friendly websites and applications. Explore his portfolio to discover his impressive range of skills and expertise in web development, network engineering, and programming, and see how he can help take your business to the next level."/>
+                      content="Steven Geudens is a versatile developer, network engineer, and programmer with a passion for building high-performance, user-friendly websites and applications. Explore his portfolio to discover his impressive range of skills and expertise in development, network engineering, and programming."/>
             </Head>
             <TransitionEffect/>
             <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
@@ -30,10 +30,10 @@ export default function Home({mode}) {
                             <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left
                       xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
                             <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                                Hey there! I&apos;m Steven Geudens, a passionate and driven Full-Stack Developer ready for new challenges. I bring fresh ideas, top-notch coding skills, and a hunger for learning. Let&apos;s turn your ideas into reality and achieve success together!
+                                Hey there! I&apos;m Steven Geudens, a passionate and driven junior Developer ready for new challenges. I bring fresh ideas, top-notch coding skills, and a hunger for learning. Let&apos;s turn your ideas into reality and achieve success together!
                             </p>
                             <div className="flex items-center self-start mt-2 lg:self-center">
-                                <Link href="/CV Steven Geudens EN.pdf" target={"_blank"}
+                                <Link href="/CV Steven Geudens v2 EN.pdf" target={"_blank"}
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                           hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
                           border-2 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
