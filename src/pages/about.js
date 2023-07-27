@@ -62,7 +62,7 @@ const About = () => {
                             </p>
                             <p className="mt-4 font-medium">
                                 As a recent graduate in programming and computer science network management, I bring a unique perspective to my work as
-                                a full-stack developer. My background in network management has equipped me with a strong understanding
+                                a developer. My background in network management has equipped me with a strong understanding
                                 of the underlying infrastructure and technologies that power the digital world. This knowledge allows
                                 me to create web applications that are not only visually appealing but also efficient, scalable,
                                 and secure.
